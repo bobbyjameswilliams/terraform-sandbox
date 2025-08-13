@@ -1,0 +1,1 @@
+jamfpy @ git+https://github.com/thejoeker12/jamfpy-python-sdk-jamfpro@v2.2.1

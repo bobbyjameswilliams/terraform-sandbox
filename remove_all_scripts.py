@@ -12,7 +12,8 @@ instance = jamfpy.Tenant(
     auth_method="oauth2",
     client_id=CLIENT_ID,
     client_secret=CLIENT_SEC,
-    token_exp_threshold_mins=1
+    token_exp_threshold_mins=1,
+    log_level=10
 )
 
 # resp = instance.classic.scripts.get_all()
@@ -22,10 +23,9 @@ instance = jamfpy.Tenant(
 #     del_resp = instance.classic.scripts.delete_by_id(i["id"])
 #     print(del_resp.text)
 
-resp = instance.classic.computer_extension_attributes.get_all()
-resp.raise_for_status()
-all_scripts = resp.json()["computer_extension_attributes"]
+resp2 = instance.classic.scripts.get_all()
+resp2.raise_for_status()
+all_scripts = resp2.json()["scripts"]
 for i in all_scripts:
-    del_resp = instance.classic.computer_extension_attributes.delete(i["id"])
-    print(del_resp.text)
+    print(i)
 print(all_scripts)
