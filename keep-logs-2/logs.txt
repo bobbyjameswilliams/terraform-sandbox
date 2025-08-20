@@ -1,0 +1,570 @@
+{"level":"warn","ts":1741098231.33826,"caller":"jamfprointegration/auth.go:39","msg":"token empty before processing - disregard if first run"}
+{"level":"debug","ts":1741098231.338336,"caller":"jamfprointegration/auth_oauth.go:47","msg":"oauth endpoint constructed: https://lbgsandbox.jamfcloud.com/api/oauth/token"}
+{"level":"debug","ts":1741098231.338372,"caller":"jamfprointegration/auth_oauth.go:54","msg":"oauth token request constructed: &{Method:POST URL:https://lbgsandbox.jamfcloud.com/api/oauth/token Proto:HTTP/1.1 ProtoMajor:1 ProtoMinor:1 Header:map[] Body:{Reader:0x14000098a60} GetBody:0x102ecd710 ContentLength:155 TransferEncoding:[] Close:false Host:lbgsandbox.jamfcloud.com Form:map[] PostForm:map[] MultipartForm:<nil> Trailer:map[] RemoteAddr: RequestURI: TLS:<nil> Cancel:<nil> Response:<nil> Pattern: ctx:{emptyCtx:{}} pat:<nil> matches:[] otherValues:map[]}"}
+{"level":"info","ts":1741098231.5407732,"caller":"jamfprointegration/auth_oauth.go:94","msg":"Token obtained successfully","expiry":1741098530.54077}
+{"level":"debug","ts":1741098231.540985,"caller":"jamfprointegration/load_balancer_workaround.go:51","msg":"Starting load balancer workaround"}
+{"level":"debug","ts":1741098231.541043,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com"}
+{"level":"debug","ts":1741098231.5410829,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.541107,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.609897,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com"}
+{"level":"debug","ts":1741098231.610076,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.6101298,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.6474292,"caller":"jamfprointegration/load_balancer_workaround.go:101","msg":"### COMPLETED LOADBALANCER WORKAROUND ### Dupes removed: [75a37a27ad6673ed b2ae299329acb79b], outlist: [75a37a27ad6673ed b2ae299329acb79b]"}
+{"level":"debug","ts":1741098231.647615,"caller":"jamfprointegration/load_balancer_workaround.go:29","msg":"Chosen Cookie:75a37a27ad6673ed "}
+{"level":"debug","ts":1741098231.647735,"caller":"httpclient/client.go:99","msg":"validating configuration"}
+{"level":"debug","ts":1741098231.64782,"caller":"httpclient/client.go:106","msg":"configuration valid"}
+{"level":"debug","ts":1741098231.647871,"caller":"httpclient/client.go:149","msg":"setting custom cookies"}
+{"level":"debug","ts":1741098231.647941,"caller":"httpclient/cookies.go:10","msg":"cookie URL set globally to: %shttps://lbgsandbox.jamfcloud.com"}
+{"level":"debug","ts":1741098231.6480021,"caller":"httpclient/cookies.go:18","msg":"[REDACTED] cookies set successfully"}
+{"level":"info","ts":1741098231.648086,"caller":"httpclient/client.go:153","msg":"client init complete: &{config:0x14000610780 Integration:0x14000610780 http:0x140006258f0 Sugar:0x1400060c318 Concurrency:<nil>}"}
+{"level":"debug","ts":1741098231.659174,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/scripts/75486"}
+{"level":"debug","ts":1741098231.659182,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/scripts/75494"}
+{"level":"debug","ts":1741098231.659358,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/scripts/75488"}
+{"level":"debug","ts":1741098231.6594229,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/scripts/75488"}
+{"level":"debug","ts":1741098231.659468,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.659471,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/scripts/75489"}
+{"level":"debug","ts":1741098231.65955,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/scripts/75495"}
+{"level":"debug","ts":1741098231.659602,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/scripts/75495"}
+{"level":"debug","ts":1741098231.6596081,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/scripts/75492"}
+{"level":"debug","ts":1741098231.6596868,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/scripts/75492"}
+{"level":"debug","ts":1741098231.659317,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/scripts/75486"}
+{"level":"debug","ts":1741098231.6597838,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.6598022,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.659811,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/scripts/75487"}
+{"level":"debug","ts":1741098231.6598668,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.6596322,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.6599529,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.65981,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.659567,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/scripts/75489"}
+{"level":"debug","ts":1741098231.660068,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.6600902,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.659489,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.6593752,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/scripts/75494"}
+{"level":"debug","ts":1741098231.6602108,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.660226,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.6592278,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/scripts/75490"}
+{"level":"debug","ts":1741098231.66029,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/scripts/75490"}
+{"level":"debug","ts":1741098231.6603122,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.660325,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.6593878,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/scripts/75491"}
+{"level":"debug","ts":1741098231.660409,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/scripts/75491"}
+{"level":"debug","ts":1741098231.66044,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.6604748,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.659513,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/scripts/75493"}
+{"level":"debug","ts":1741098231.660581,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/scripts/75493"}
+{"level":"debug","ts":1741098231.660609,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.6598778,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/scripts/75487"}
+{"level":"debug","ts":1741098231.6606631,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.660789,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.660634,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.7085,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/scripts/75494 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x140003c0900}"}
+{"level":"debug","ts":1741098231.70855,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/scripts/75488 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x140003c0a20}"}
+{"level":"debug","ts":1741098231.7086122,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/scripts/75490 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x140003c0d80}"}
+{"level":"debug","ts":1741098231.708564,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/scripts/75489 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x140003c0b40}"}
+{"level":"debug","ts":1741098231.708659,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/scripts/75486 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x140003c0c60}"}
+{"level":"debug","ts":1741098231.708695,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/scripts/75491 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x140003c0ea0}"}
+{"level":"debug","ts":1741098231.708698,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/scripts/75487 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x140003c10e0}"}
+{"level":"debug","ts":1741098231.7087271,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/scripts/75492 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x140003c1320}"}
+{"level":"debug","ts":1741098231.7087228,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/scripts/75493 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x140003c1200}"}
+{"level":"debug","ts":1741098231.708746,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/scripts/75495 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x140003c0fc0}"}
+{"level":"debug","ts":1741098231.809698,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"debug","ts":1741098231.809834,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"debug","ts":1741098231.8098822,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"info","ts":1741098231.809938,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/scripts/75490"}
+{"level":"debug","ts":1741098231.809837,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"info","ts":1741098231.810116,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/scripts/75491"}
+{"level":"info","ts":1741098231.809889,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/scripts/75493"}
+{"level":"debug","ts":1741098231.810198,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"75493\",\n  \"name\" : \"tf-testing-local-jl-7\",\n  \"info\" : \"\",\n  \"notes\" : \"\",\n  \"priority\" : \"BEFORE\",\n  \"parameter4\" : \"\",\n  \"parameter5\" : \"\",\n  \"parameter6\" : \"\",\n  \"parameter7\" : \"\",\n  \"parameter8\" : \"\",\n  \"parameter9\" : \"\",\n  \"parameter10\" : \"\",\n  \"parameter11\" : \"\",\n  \"osRequirements\" : \"\",\n  \"scriptContents\" : \"echo hello world\",\n  \"categoryId\" : \"-1\",\n  \"categoryName\" : \"NONE\"\n}"}
+{"level":"debug","ts":1741098231.809763,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"info","ts":1741098231.810328,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/scripts/75494"}
+{"level":"debug","ts":1741098231.810385,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"75494\",\n  \"name\" : \"tf-testing-local-jl-1\",\n  \"info\" : \"\",\n  \"notes\" : \"\",\n  \"priority\" : \"BEFORE\",\n  \"parameter4\" : \"\",\n  \"parameter5\" : \"\",\n  \"parameter6\" : \"\",\n  \"parameter7\" : \"\",\n  \"parameter8\" : \"\",\n  \"parameter9\" : \"\",\n  \"parameter10\" : \"\",\n  \"parameter11\" : \"\",\n  \"osRequirements\" : \"\",\n  \"scriptContents\" : \"echo hello world\",\n  \"categoryId\" : \"-1\",\n  \"categoryName\" : \"NONE\"\n}"}
+{"level":"info","ts":1741098231.810449,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"info","ts":1741098231.8104792,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"debug","ts":1741098231.809813,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"info","ts":1741098231.810623,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/scripts/75492"}
+{"level":"debug","ts":1741098231.8106618,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"75492\",\n  \"name\" : \"tf-testing-local-jl-2\",\n  \"info\" : \"\",\n  \"notes\" : \"\",\n  \"priority\" : \"BEFORE\",\n  \"parameter4\" : \"\",\n  \"parameter5\" : \"\",\n  \"parameter6\" : \"\",\n  \"parameter7\" : \"\",\n  \"parameter8\" : \"\",\n  \"parameter9\" : \"\",\n  \"parameter10\" : \"\",\n  \"parameter11\" : \"\",\n  \"osRequirements\" : \"\",\n  \"scriptContents\" : \"echo hello world\",\n  \"categoryId\" : \"-1\",\n  \"categoryName\" : \"NONE\"\n}"}
+{"level":"info","ts":1741098231.8108249,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"debug","ts":1741098231.809818,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"info","ts":1741098231.8109381,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/scripts/75495"}
+{"level":"debug","ts":1741098231.810973,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"75495\",\n  \"name\" : \"tf-testing-local-jl-3\",\n  \"info\" : \"\",\n  \"notes\" : \"\",\n  \"priority\" : \"BEFORE\",\n  \"parameter4\" : \"\",\n  \"parameter5\" : \"\",\n  \"parameter6\" : \"\",\n  \"parameter7\" : \"\",\n  \"parameter8\" : \"\",\n  \"parameter9\" : \"\",\n  \"parameter10\" : \"\",\n  \"parameter11\" : \"\",\n  \"osRequirements\" : \"\",\n  \"scriptContents\" : \"echo hello world\",\n  \"categoryId\" : \"-1\",\n  \"categoryName\" : \"NONE\"\n}"}
+{"level":"info","ts":1741098231.811083,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"info","ts":1741098231.809855,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/scripts/75487"}
+{"level":"debug","ts":1741098231.811331,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"75487\",\n  \"name\" : \"tf-testing-local-jl-5\",\n  \"info\" : \"\",\n  \"notes\" : \"\",\n  \"priority\" : \"BEFORE\",\n  \"parameter4\" : \"\",\n  \"parameter5\" : \"\",\n  \"parameter6\" : \"\",\n  \"parameter7\" : \"\",\n  \"parameter8\" : \"\",\n  \"parameter9\" : \"\",\n  \"parameter10\" : \"\",\n  \"parameter11\" : \"\",\n  \"osRequirements\" : \"\",\n  \"scriptContents\" : \"echo hello world\",\n  \"categoryId\" : \"-1\",\n  \"categoryName\" : \"NONE\"\n}"}
+{"level":"info","ts":1741098231.812296,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"debug","ts":1741098231.809739,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"info","ts":1741098231.813497,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/scripts/75488"}
+{"level":"debug","ts":1741098231.813542,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"75488\",\n  \"name\" : \"tf-testing-local-jl-9\",\n  \"info\" : \"\",\n  \"notes\" : \"\",\n  \"priority\" : \"BEFORE\",\n  \"parameter4\" : \"\",\n  \"parameter5\" : \"\",\n  \"parameter6\" : \"\",\n  \"parameter7\" : \"\",\n  \"parameter8\" : \"\",\n  \"parameter9\" : \"\",\n  \"parameter10\" : \"\",\n  \"parameter11\" : \"\",\n  \"osRequirements\" : \"\",\n  \"scriptContents\" : \"echo hello world\",\n  \"categoryId\" : \"-1\",\n  \"categoryName\" : \"NONE\"\n}"}
+{"level":"info","ts":1741098231.813619,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"debug","ts":1741098231.809868,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"info","ts":1741098231.813924,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/scripts/75486"}
+{"level":"debug","ts":1741098231.8141382,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"75486\",\n  \"name\" : \"tf-testing-local-jl-6\",\n  \"info\" : \"\",\n  \"notes\" : \"\",\n  \"priority\" : \"BEFORE\",\n  \"parameter4\" : \"\",\n  \"parameter5\" : \"\",\n  \"parameter6\" : \"\",\n  \"parameter7\" : \"\",\n  \"parameter8\" : \"\",\n  \"parameter9\" : \"\",\n  \"parameter10\" : \"\",\n  \"parameter11\" : \"\",\n  \"osRequirements\" : \"\",\n  \"scriptContents\" : \"echo hello world\",\n  \"categoryId\" : \"-1\",\n  \"categoryName\" : \"NONE\"\n}"}
+{"level":"info","ts":1741098231.814228,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"debug","ts":1741098231.8099499,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"info","ts":1741098231.81449,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/scripts/75489"}
+{"level":"debug","ts":1741098231.8145201,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"75489\",\n  \"name\" : \"tf-testing-local-jl-0\",\n  \"info\" : \"\",\n  \"notes\" : \"\",\n  \"priority\" : \"BEFORE\",\n  \"parameter4\" : \"\",\n  \"parameter5\" : \"\",\n  \"parameter6\" : \"\",\n  \"parameter7\" : \"\",\n  \"parameter8\" : \"\",\n  \"parameter9\" : \"\",\n  \"parameter10\" : \"\",\n  \"parameter11\" : \"\",\n  \"osRequirements\" : \"\",\n  \"scriptContents\" : \"echo hello world\",\n  \"categoryId\" : \"-1\",\n  \"categoryName\" : \"NONE\"\n}"}
+{"level":"info","ts":1741098231.8146298,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"debug","ts":1741098231.8100522,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"75490\",\n  \"name\" : \"tf-testing-local-jl-8\",\n  \"info\" : \"\",\n  \"notes\" : \"\",\n  \"priority\" : \"BEFORE\",\n  \"parameter4\" : \"\",\n  \"parameter5\" : \"\",\n  \"parameter6\" : \"\",\n  \"parameter7\" : \"\",\n  \"parameter8\" : \"\",\n  \"parameter9\" : \"\",\n  \"parameter10\" : \"\",\n  \"parameter11\" : \"\",\n  \"osRequirements\" : \"\",\n  \"scriptContents\" : \"echo hello world\",\n  \"categoryId\" : \"-1\",\n  \"categoryName\" : \"NONE\"\n}"}
+{"level":"info","ts":1741098231.8147688,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"debug","ts":1741098231.810165,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"75491\",\n  \"name\" : \"tf-testing-local-jl-4\",\n  \"info\" : \"\",\n  \"notes\" : \"\",\n  \"priority\" : \"BEFORE\",\n  \"parameter4\" : \"\",\n  \"parameter5\" : \"\",\n  \"parameter6\" : \"\",\n  \"parameter7\" : \"\",\n  \"parameter8\" : \"\",\n  \"parameter9\" : \"\",\n  \"parameter10\" : \"\",\n  \"parameter11\" : \"\",\n  \"osRequirements\" : \"\",\n  \"scriptContents\" : \"echo hello world\",\n  \"categoryId\" : \"-1\",\n  \"categoryName\" : \"NONE\"\n}"}
+{"level":"info","ts":1741098231.815302,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"debug","ts":1741098231.823937,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/buildings/5546"}
+{"level":"debug","ts":1741098231.8240519,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/buildings/5546"}
+{"level":"debug","ts":1741098231.824074,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.824091,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.8260548,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/buildings/5540"}
+{"level":"debug","ts":1741098231.826164,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/buildings/5540"}
+{"level":"debug","ts":1741098231.826195,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.826211,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.826275,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/buildings/5541"}
+{"level":"debug","ts":1741098231.826735,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/buildings/5541"}
+{"level":"debug","ts":1741098231.8267672,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.826783,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.826275,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/buildings/5543"}
+{"level":"debug","ts":1741098231.826876,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/buildings/5543"}
+{"level":"debug","ts":1741098231.826901,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.826943,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.8269372,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/buildings/5548"}
+{"level":"debug","ts":1741098231.827013,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/buildings/5548"}
+{"level":"debug","ts":1741098231.8270102,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/buildings/5542"}
+{"level":"debug","ts":1741098231.827182,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/buildings/5542"}
+{"level":"debug","ts":1741098231.8272262,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.827275,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.827137,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.82751,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.828008,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/buildings/5547"}
+{"level":"debug","ts":1741098231.828053,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/buildings/5547"}
+{"level":"debug","ts":1741098231.8280802,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.828096,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.828216,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/buildings/5545"}
+{"level":"debug","ts":1741098231.82828,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/buildings/5545"}
+{"level":"debug","ts":1741098231.828243,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/buildings/5549"}
+{"level":"debug","ts":1741098231.828335,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/buildings/5549"}
+{"level":"debug","ts":1741098231.828358,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.828309,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.828453,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.8284092,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.828545,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/buildings/5544"}
+{"level":"debug","ts":1741098231.828587,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/buildings/5544"}
+{"level":"debug","ts":1741098231.828604,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.8286211,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.875199,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/buildings/5541 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x14000ab43f0}"}
+{"level":"debug","ts":1741098231.875306,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/buildings/5543 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x14000ab4870}"}
+{"level":"debug","ts":1741098231.875257,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/buildings/5542 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x14000ab4510}"}
+{"level":"debug","ts":1741098231.875257,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/buildings/5546 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x14000ab4630}"}
+{"level":"debug","ts":1741098231.875365,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/buildings/5540 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x14000ab4cf0}"}
+{"level":"debug","ts":1741098231.8754072,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/buildings/5545 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x14000ab4f30}"}
+{"level":"debug","ts":1741098231.875433,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/buildings/5548 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x14000ab5170}"}
+{"level":"debug","ts":1741098231.875415,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/buildings/5544 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x14000ab5050}"}
+{"level":"debug","ts":1741098231.875413,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/buildings/5549 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x14000ab4e10}"}
+{"level":"debug","ts":1741098231.8754199,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/buildings/5547 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x14000ab4750}"}
+{"level":"debug","ts":1741098231.976403,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"debug","ts":1741098231.9765382,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"debug","ts":1741098231.97656,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"debug","ts":1741098231.976614,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"info","ts":1741098231.976636,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/buildings/5548"}
+{"level":"info","ts":1741098231.9765592,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/buildings/5541"}
+{"level":"debug","ts":1741098231.976737,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"5541\",\n  \"name\" : \"tf-testing-local-bw-9\",\n  \"streetAddress1\" : \"\",\n  \"streetAddress2\" : \"\",\n  \"city\" : \"\",\n  \"stateProvince\" : \"\",\n  \"zipPostalCode\" : \"\",\n  \"country\" : \"\"\n}"}
+{"level":"info","ts":1741098231.976655,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/buildings/5544"}
+{"level":"debug","ts":1741098231.976848,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"5544\",\n  \"name\" : \"tf-testing-local-bw-5\",\n  \"streetAddress1\" : \"\",\n  \"streetAddress2\" : \"\",\n  \"city\" : \"\",\n  \"stateProvince\" : \"\",\n  \"zipPostalCode\" : \"\",\n  \"country\" : \"\"\n}"}
+{"level":"info","ts":1741098231.976906,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"info","ts":1741098231.976595,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/buildings/5547"}
+{"level":"debug","ts":1741098231.977088,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"5547\",\n  \"name\" : \"tf-testing-local-bw-3\",\n  \"streetAddress1\" : \"\",\n  \"streetAddress2\" : \"\",\n  \"city\" : \"\",\n  \"stateProvince\" : \"\",\n  \"zipPostalCode\" : \"\",\n  \"country\" : \"\"\n}"}
+{"level":"info","ts":1741098231.977151,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"debug","ts":1741098231.976614,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"info","ts":1741098231.977262,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/buildings/5540"}
+{"level":"debug","ts":1741098231.9773068,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"5540\",\n  \"name\" : \"tf-testing-local-bw-8\",\n  \"streetAddress1\" : \"\",\n  \"streetAddress2\" : \"\",\n  \"city\" : \"\",\n  \"stateProvince\" : \"\",\n  \"zipPostalCode\" : \"\",\n  \"country\" : \"\"\n}"}
+{"level":"info","ts":1741098231.977373,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"debug","ts":1741098231.976491,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"info","ts":1741098231.9777129,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/buildings/5543"}
+{"level":"debug","ts":1741098231.9777532,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"5543\",\n  \"name\" : \"tf-testing-local-bw-4\",\n  \"streetAddress1\" : \"\",\n  \"streetAddress2\" : \"\",\n  \"city\" : \"\",\n  \"stateProvince\" : \"\",\n  \"zipPostalCode\" : \"\",\n  \"country\" : \"\"\n}"}
+{"level":"info","ts":1741098231.977817,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"debug","ts":1741098231.9765031,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"info","ts":1741098231.978275,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/buildings/5542"}
+{"level":"debug","ts":1741098231.978316,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"5542\",\n  \"name\" : \"tf-testing-local-bw-0\",\n  \"streetAddress1\" : \"\",\n  \"streetAddress2\" : \"\",\n  \"city\" : \"\",\n  \"stateProvince\" : \"\",\n  \"zipPostalCode\" : \"\",\n  \"country\" : \"\"\n}"}
+{"level":"info","ts":1741098231.978374,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"debug","ts":1741098231.976512,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"info","ts":1741098231.978445,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/buildings/5546"}
+{"level":"debug","ts":1741098231.978486,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"5546\",\n  \"name\" : \"tf-testing-local-bw-6\",\n  \"streetAddress1\" : \"\",\n  \"streetAddress2\" : \"\",\n  \"city\" : \"\",\n  \"stateProvince\" : \"\",\n  \"zipPostalCode\" : \"\",\n  \"country\" : \"\"\n}"}
+{"level":"info","ts":1741098231.978546,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"debug","ts":1741098231.976452,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"info","ts":1741098231.978975,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/buildings/5545"}
+{"level":"debug","ts":1741098231.979001,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"5545\",\n  \"name\" : \"tf-testing-local-bw-7\",\n  \"streetAddress1\" : \"\",\n  \"streetAddress2\" : \"\",\n  \"city\" : \"\",\n  \"stateProvince\" : \"\",\n  \"zipPostalCode\" : \"\",\n  \"country\" : \"\"\n}"}
+{"level":"debug","ts":1741098231.9766521,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"debug","ts":1741098231.9766898,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"5548\",\n  \"name\" : \"tf-testing-local-bw-2\",\n  \"streetAddress1\" : \"\",\n  \"streetAddress2\" : \"\",\n  \"city\" : \"\",\n  \"stateProvince\" : \"\",\n  \"zipPostalCode\" : \"\",\n  \"country\" : \"\"\n}"}
+{"level":"info","ts":1741098231.976917,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"info","ts":1741098231.979627,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"info","ts":1741098231.98001,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"info","ts":1741098231.980066,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/buildings/5549"}
+{"level":"debug","ts":1741098231.980097,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"5549\",\n  \"name\" : \"tf-testing-local-bw-1\",\n  \"streetAddress1\" : \"\",\n  \"streetAddress2\" : \"\",\n  \"city\" : \"\",\n  \"stateProvince\" : \"\",\n  \"zipPostalCode\" : \"\",\n  \"country\" : \"\"\n}"}
+{"level":"info","ts":1741098231.980138,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"debug","ts":1741098231.9872901,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/computer-extension-attributes/12208"}
+{"level":"debug","ts":1741098231.9873888,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12208"}
+{"level":"debug","ts":1741098231.9874089,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.987423,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.988422,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/computer-extension-attributes/12209"}
+{"level":"debug","ts":1741098231.988467,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12209"}
+{"level":"debug","ts":1741098231.9884832,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.9884958,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.988718,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/computer-extension-attributes/12214"}
+{"level":"debug","ts":1741098231.988766,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12214"}
+{"level":"debug","ts":1741098231.9887848,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.988801,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.990504,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/computer-extension-attributes/12206"}
+{"level":"debug","ts":1741098231.990623,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/computer-extension-attributes/12207"}
+{"level":"debug","ts":1741098231.9906461,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12206"}
+{"level":"debug","ts":1741098231.990716,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.9907358,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.9907389,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/computer-extension-attributes/12213"}
+{"level":"debug","ts":1741098231.990797,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12213"}
+{"level":"debug","ts":1741098231.990819,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.9908512,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.9906921,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12207"}
+{"level":"debug","ts":1741098231.9909189,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.990942,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.990871,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/computer-extension-attributes/12210"}
+{"level":"debug","ts":1741098231.991007,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12210"}
+{"level":"debug","ts":1741098231.991028,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.99105,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.9915469,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/computer-extension-attributes/12212"}
+{"level":"debug","ts":1741098231.991593,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12212"}
+{"level":"debug","ts":1741098231.991617,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.991633,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.993144,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/computer-extension-attributes/12211"}
+{"level":"debug","ts":1741098231.9932,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12211"}
+{"level":"debug","ts":1741098231.993228,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.993243,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098231.993263,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"GET","endpoint":"/api/v1/computer-extension-attributes/12205"}
+{"level":"debug","ts":1741098231.993367,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12205"}
+{"level":"debug","ts":1741098231.99341,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098231.993428,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098232.032586,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/computer-extension-attributes/12208 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x14000526480}"}
+{"level":"debug","ts":1741098232.032585,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/computer-extension-attributes/12213 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x140005265a0}"}
+{"level":"debug","ts":1741098232.033955,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/computer-extension-attributes/12209 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x140009aa090}"}
+{"level":"debug","ts":1741098232.0340018,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/computer-extension-attributes/12214 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x140009aa5a0}"}
+{"level":"debug","ts":1741098232.034039,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/computer-extension-attributes/12207 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x140009aa900}"}
+{"level":"debug","ts":1741098232.034038,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/computer-extension-attributes/12206 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x140009aa7e0}"}
+{"level":"debug","ts":1741098232.034095,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/computer-extension-attributes/12212 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x140009aab40}"}
+{"level":"debug","ts":1741098232.03409,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/computer-extension-attributes/12210 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x140009aa6c0}"}
+{"level":"debug","ts":1741098232.0363488,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/computer-extension-attributes/12211 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x14000b2c1b0}"}
+{"level":"debug","ts":1741098232.036355,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 GET <nil>} {endpoint 15 0 /api/v1/computer-extension-attributes/12205 <nil>} {status_code 11 200  <nil>} {raw_response 23 0  0x14000b2c090}"}
+{"level":"debug","ts":1741098232.133767,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"info","ts":1741098232.133983,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12213"}
+{"level":"debug","ts":1741098232.134036,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"debug","ts":1741098232.134054,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"12213\",\n  \"name\" : \"tf-testing-local-bw-8\",\n  \"description\" : \"An attribute collected from a pop-up menu.\",\n  \"dataType\" : \"STRING\",\n  \"inventoryDisplayType\" : \"USER_AND_LOCATION\",\n  \"inputType\" : \"POPUP\",\n  \"scriptContents\" : \"\",\n  \"popupMenuChoices\" : [ \"Option 1\", \"Option 2\", \"Option 3\" ],\n  \"enabled\" : true,\n  \"ldapAttributeMapping\" : \"\",\n  \"ldapExtensionAttributeAllowed\" : false,\n  \"manageExistingData\" : null\n}"}
+{"level":"debug","ts":1741098232.1338172,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"info","ts":1741098232.134219,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12208"}
+{"level":"debug","ts":1741098232.134311,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"info","ts":1741098232.134381,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12206"}
+{"level":"debug","ts":1741098232.1344268,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"12206\",\n  \"name\" : \"tf-testing-local-bw-4\",\n  \"description\" : \"An attribute collected from a pop-up menu.\",\n  \"dataType\" : \"STRING\",\n  \"inventoryDisplayType\" : \"USER_AND_LOCATION\",\n  \"inputType\" : \"POPUP\",\n  \"scriptContents\" : \"\",\n  \"popupMenuChoices\" : [ \"Option 1\", \"Option 2\", \"Option 3\" ],\n  \"enabled\" : true,\n  \"ldapAttributeMapping\" : \"\",\n  \"ldapExtensionAttributeAllowed\" : false,\n  \"manageExistingData\" : null\n}"}
+{"level":"debug","ts":1741098232.1342459,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"info","ts":1741098232.134507,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12210"}
+{"level":"info","ts":1741098232.134091,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12214"}
+{"level":"info","ts":1741098232.134521,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"debug","ts":1741098232.134279,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"info","ts":1741098232.134845,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12212"}
+{"level":"debug","ts":1741098232.134884,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"12212\",\n  \"name\" : \"tf-testing-local-bw-9\",\n  \"description\" : \"An attribute collected from a pop-up menu.\",\n  \"dataType\" : \"STRING\",\n  \"inventoryDisplayType\" : \"USER_AND_LOCATION\",\n  \"inputType\" : \"POPUP\",\n  \"scriptContents\" : \"\",\n  \"popupMenuChoices\" : [ \"Option 1\", \"Option 2\", \"Option 3\" ],\n  \"enabled\" : true,\n  \"ldapAttributeMapping\" : \"\",\n  \"ldapExtensionAttributeAllowed\" : false,\n  \"manageExistingData\" : null\n}"}
+{"level":"info","ts":1741098232.134971,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"debug","ts":1741098232.134302,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"info","ts":1741098232.13517,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12207"}
+{"level":"debug","ts":1741098232.135212,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"12207\",\n  \"name\" : \"tf-testing-local-bw-7\",\n  \"description\" : \"An attribute collected from a pop-up menu.\",\n  \"dataType\" : \"STRING\",\n  \"inventoryDisplayType\" : \"USER_AND_LOCATION\",\n  \"inputType\" : \"POPUP\",\n  \"scriptContents\" : \"\",\n  \"popupMenuChoices\" : [ \"Option 1\", \"Option 2\", \"Option 3\" ],\n  \"enabled\" : true,\n  \"ldapAttributeMapping\" : \"\",\n  \"ldapExtensionAttributeAllowed\" : false,\n  \"manageExistingData\" : null\n}"}
+{"level":"info","ts":1741098232.1353128,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"info","ts":1741098232.134312,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"debug","ts":1741098232.134327,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"12208\",\n  \"name\" : \"tf-testing-local-bw-1\",\n  \"description\" : \"An attribute collected from a pop-up menu.\",\n  \"dataType\" : \"STRING\",\n  \"inventoryDisplayType\" : \"USER_AND_LOCATION\",\n  \"inputType\" : \"POPUP\",\n  \"scriptContents\" : \"\",\n  \"popupMenuChoices\" : [ \"Option 1\", \"Option 2\", \"Option 3\" ],\n  \"enabled\" : true,\n  \"ldapAttributeMapping\" : \"\",\n  \"ldapExtensionAttributeAllowed\" : false,\n  \"manageExistingData\" : null\n}"}
+{"level":"info","ts":1741098232.135872,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"debug","ts":1741098232.1340108,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"info","ts":1741098232.1376379,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12209"}
+{"level":"debug","ts":1741098232.1376839,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"12209\",\n  \"name\" : \"tf-testing-local-bw-0\",\n  \"description\" : \"An attribute collected from a pop-up menu.\",\n  \"dataType\" : \"STRING\",\n  \"inventoryDisplayType\" : \"USER_AND_LOCATION\",\n  \"inputType\" : \"POPUP\",\n  \"scriptContents\" : \"\",\n  \"popupMenuChoices\" : [ \"Option 1\", \"Option 2\", \"Option 3\" ],\n  \"enabled\" : true,\n  \"ldapAttributeMapping\" : \"\",\n  \"ldapExtensionAttributeAllowed\" : false,\n  \"manageExistingData\" : null\n}"}
+{"level":"info","ts":1741098232.1377559,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"debug","ts":1741098232.134549,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"12210\",\n  \"name\" : \"tf-testing-local-bw-2\",\n  \"description\" : \"An attribute collected from a pop-up menu.\",\n  \"dataType\" : \"STRING\",\n  \"inventoryDisplayType\" : \"USER_AND_LOCATION\",\n  \"inputType\" : \"POPUP\",\n  \"scriptContents\" : \"\",\n  \"popupMenuChoices\" : [ \"Option 1\", \"Option 2\", \"Option 3\" ],\n  \"enabled\" : true,\n  \"ldapAttributeMapping\" : \"\",\n  \"ldapExtensionAttributeAllowed\" : false,\n  \"manageExistingData\" : null\n}"}
+{"level":"info","ts":1741098232.1382332,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"debug","ts":1741098232.134791,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"12214\",\n  \"name\" : \"tf-testing-local-bw-5\",\n  \"description\" : \"An attribute collected from a pop-up menu.\",\n  \"dataType\" : \"STRING\",\n  \"inventoryDisplayType\" : \"USER_AND_LOCATION\",\n  \"inputType\" : \"POPUP\",\n  \"scriptContents\" : \"\",\n  \"popupMenuChoices\" : [ \"Option 1\", \"Option 2\", \"Option 3\" ],\n  \"enabled\" : true,\n  \"ldapAttributeMapping\" : \"\",\n  \"ldapExtensionAttributeAllowed\" : false,\n  \"manageExistingData\" : null\n}"}
+{"level":"info","ts":1741098232.13845,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"debug","ts":1741098232.1386409,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"info","ts":1741098232.138667,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12205"}
+{"level":"debug","ts":1741098232.138689,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"12205\",\n  \"name\" : \"tf-testing-local-bw-3\",\n  \"description\" : \"An attribute collected from a pop-up menu.\",\n  \"dataType\" : \"STRING\",\n  \"inventoryDisplayType\" : \"USER_AND_LOCATION\",\n  \"inputType\" : \"POPUP\",\n  \"scriptContents\" : \"\",\n  \"popupMenuChoices\" : [ \"Option 1\", \"Option 2\", \"Option 3\" ],\n  \"enabled\" : true,\n  \"ldapAttributeMapping\" : \"\",\n  \"ldapExtensionAttributeAllowed\" : false,\n  \"manageExistingData\" : null\n}"}
+{"level":"info","ts":1741098232.138765,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"debug","ts":1741098232.139133,"caller":"httpclient/request.go:220","msg":"Status Code: 200"}
+{"level":"info","ts":1741098232.139168,"caller":"httpclient/request.go:226","msg":"GET request successful at https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12211"}
+{"level":"debug","ts":1741098232.139186,"caller":"response/success.go:43","msg":"Raw HTTP Response","Body":"{\n  \"id\" : \"12211\",\n  \"name\" : \"tf-testing-local-bw-6\",\n  \"description\" : \"An attribute collected from a pop-up menu.\",\n  \"dataType\" : \"STRING\",\n  \"inventoryDisplayType\" : \"USER_AND_LOCATION\",\n  \"inputType\" : \"POPUP\",\n  \"scriptContents\" : \"\",\n  \"popupMenuChoices\" : [ \"Option 1\", \"Option 2\", \"Option 3\" ],\n  \"enabled\" : true,\n  \"ldapAttributeMapping\" : \"\",\n  \"ldapExtensionAttributeAllowed\" : false,\n  \"manageExistingData\" : null\n}"}
+{"level":"info","ts":1741098232.13923,"caller":"response/success.go:84","msg":"Successfully unmarshalled JSON response{content type 15 0 application/json <nil>}"}
+{"level":"warn","ts":1741098232.2052858,"caller":"jamfprointegration/auth.go:39","msg":"token empty before processing - disregard if first run"}
+{"level":"debug","ts":1741098232.205468,"caller":"jamfprointegration/auth_oauth.go:47","msg":"oauth endpoint constructed: https://lbgsandbox.jamfcloud.com/api/oauth/token"}
+{"level":"debug","ts":1741098232.205642,"caller":"jamfprointegration/auth_oauth.go:54","msg":"oauth token request constructed: &{Method:POST URL:https://lbgsandbox.jamfcloud.com/api/oauth/token Proto:HTTP/1.1 ProtoMajor:1 ProtoMinor:1 Header:map[] Body:{Reader:0x140000981a0} GetBody:0x104dbd710 ContentLength:155 TransferEncoding:[] Close:false Host:lbgsandbox.jamfcloud.com Form:map[] PostForm:map[] MultipartForm:<nil> Trailer:map[] RemoteAddr: RequestURI: TLS:<nil> Cancel:<nil> Response:<nil> Pattern: ctx:{emptyCtx:{}} pat:<nil> matches:[] otherValues:map[]}"}
+{"level":"info","ts":1741098232.432545,"caller":"jamfprointegration/auth_oauth.go:94","msg":"Token obtained successfully","expiry":1741098531.432538}
+{"level":"debug","ts":1741098232.4329221,"caller":"jamfprointegration/load_balancer_workaround.go:51","msg":"Starting load balancer workaround"}
+{"level":"debug","ts":1741098232.433007,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com"}
+{"level":"debug","ts":1741098232.433069,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098232.433109,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098232.506191,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com"}
+{"level":"debug","ts":1741098232.506274,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098232.5063,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098232.549045,"caller":"jamfprointegration/load_balancer_workaround.go:101","msg":"### COMPLETED LOADBALANCER WORKAROUND ### Dupes removed: [75a37a27ad6673ed b2ae299329acb79b], outlist: [75a37a27ad6673ed b2ae299329acb79b]"}
+{"level":"debug","ts":1741098232.549377,"caller":"jamfprointegration/load_balancer_workaround.go:29","msg":"Chosen Cookie:75a37a27ad6673ed "}
+{"level":"debug","ts":1741098232.5494962,"caller":"httpclient/client.go:99","msg":"validating configuration"}
+{"level":"debug","ts":1741098232.549577,"caller":"httpclient/client.go:106","msg":"configuration valid"}
+{"level":"debug","ts":1741098232.549612,"caller":"httpclient/client.go:149","msg":"setting custom cookies"}
+{"level":"debug","ts":1741098232.5497,"caller":"httpclient/cookies.go:10","msg":"cookie URL set globally to: %shttps://lbgsandbox.jamfcloud.com"}
+{"level":"debug","ts":1741098232.549824,"caller":"httpclient/cookies.go:18","msg":"[REDACTED] cookies set successfully"}
+{"level":"info","ts":1741098232.549899,"caller":"httpclient/client.go:153","msg":"client init complete: &{config:0x14000516480 Integration:0x14000516480 http:0x140001dcbd0 Sugar:0x140006a4328 Concurrency:<nil>}"}
+{"level":"warn","ts":1741098232.6567822,"caller":"jamfprointegration/auth.go:39","msg":"token empty before processing - disregard if first run"}
+{"level":"debug","ts":1741098232.656839,"caller":"jamfprointegration/auth_oauth.go:47","msg":"oauth endpoint constructed: https://lbgsandbox.jamfcloud.com/api/oauth/token"}
+{"level":"debug","ts":1741098232.6568792,"caller":"jamfprointegration/auth_oauth.go:54","msg":"oauth token request constructed: &{Method:POST URL:https://lbgsandbox.jamfcloud.com/api/oauth/token Proto:HTTP/1.1 ProtoMajor:1 ProtoMinor:1 Header:map[] Body:{Reader:0x140000def00} GetBody:0x105255710 ContentLength:155 TransferEncoding:[] Close:false Host:lbgsandbox.jamfcloud.com Form:map[] PostForm:map[] MultipartForm:<nil> Trailer:map[] RemoteAddr: RequestURI: TLS:<nil> Cancel:<nil> Response:<nil> Pattern: ctx:{emptyCtx:{}} pat:<nil> matches:[] otherValues:map[]}"}
+{"level":"info","ts":1741098232.864219,"caller":"jamfprointegration/auth_oauth.go:94","msg":"Token obtained successfully","expiry":1741098531.86421}
+{"level":"debug","ts":1741098232.864534,"caller":"jamfprointegration/load_balancer_workaround.go:51","msg":"Starting load balancer workaround"}
+{"level":"debug","ts":1741098232.8645902,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com"}
+{"level":"debug","ts":1741098232.864635,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098232.864664,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098232.934013,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com"}
+{"level":"debug","ts":1741098232.9342341,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098232.934291,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098232.972777,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"GET","URL":"https://lbgsandbox.jamfcloud.com"}
+{"level":"debug","ts":1741098232.973002,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098232.9730518,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098233.015132,"caller":"jamfprointegration/load_balancer_workaround.go:101","msg":"### COMPLETED LOADBALANCER WORKAROUND ### Dupes removed: [b2ae299329acb79b 75a37a27ad6673ed], outlist: [b2ae299329acb79b b2ae299329acb79b 75a37a27ad6673ed]"}
+{"level":"debug","ts":1741098233.0153458,"caller":"jamfprointegration/load_balancer_workaround.go:29","msg":"Chosen Cookie:75a37a27ad6673ed "}
+{"level":"debug","ts":1741098233.015507,"caller":"httpclient/client.go:99","msg":"validating configuration"}
+{"level":"debug","ts":1741098233.015616,"caller":"httpclient/client.go:106","msg":"configuration valid"}
+{"level":"debug","ts":1741098233.015666,"caller":"httpclient/client.go:149","msg":"setting custom cookies"}
+{"level":"debug","ts":1741098233.015742,"caller":"httpclient/cookies.go:10","msg":"cookie URL set globally to: %shttps://lbgsandbox.jamfcloud.com"}
+{"level":"debug","ts":1741098233.015806,"caller":"httpclient/cookies.go:18","msg":"[REDACTED] cookies set successfully"}
+{"level":"info","ts":1741098233.015885,"caller":"httpclient/client.go:153","msg":"client init complete: &{config:0x140003c0600 Integration:0x140003c0600 http:0x140003d1230 Sugar:0x140000e0458 Concurrency:<nil>}"}
+{"level":"debug","ts":1741098233.024039,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/scripts/75493"}
+{"level":"debug","ts":1741098233.0241752,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/scripts/75493"}
+{"level":"debug","ts":1741098233.024161,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/buildings/5544"}
+{"level":"debug","ts":1741098233.024277,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/buildings/5544"}
+{"level":"debug","ts":1741098233.024301,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098233.024319,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098233.024308,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/buildings/5549"}
+{"level":"debug","ts":1741098233.024364,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/buildings/5549"}
+{"level":"debug","ts":1741098233.024386,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098233.024405,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098233.024034,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/computer-extension-attributes/12212"}
+{"level":"debug","ts":1741098233.024383,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/computer-extension-attributes/12211"}
+{"level":"debug","ts":1741098233.0245702,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12211"}
+{"level":"debug","ts":1741098233.024617,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098233.024655,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098233.0242078,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098233.024766,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098233.0240881,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/computer-extension-attributes/12205"}
+{"level":"debug","ts":1741098233.024843,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12205"}
+{"level":"debug","ts":1741098233.02487,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098233.0249221,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098233.024197,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/computer-extension-attributes/12206"}
+{"level":"debug","ts":1741098233.025022,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12206"}
+{"level":"debug","ts":1741098233.0250409,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098233.0251179,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098233.0245068,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12212"}
+{"level":"debug","ts":1741098233.025245,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098233.025263,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098233.0732958,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/scripts/75493 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x140001f5290}"}
+{"level":"debug","ts":1741098233.1188989,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/buildings/5549 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x140001f54d0}"}
+{"level":"debug","ts":1741098233.118902,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/buildings/5544 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x140001f53b0}"}
+{"level":"debug","ts":1741098233.123487,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/computer-extension-attributes/12205 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x140001f5710}"}
+{"level":"debug","ts":1741098233.128633,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/computer-extension-attributes/12211 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x140005382d0}"}
+{"level":"debug","ts":1741098233.133846,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/computer-extension-attributes/12212 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x14000538360}"}
+{"level":"debug","ts":1741098233.144763,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/computer-extension-attributes/12206 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x14000538900}"}
+{"level":"debug","ts":1741098233.174498,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"info","ts":1741098233.174575,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/scripts/75493"}
+{"level":"info","ts":1741098233.174664,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/scripts/75493 <nil>} {Status Code 11 204  <nil>}"}
+{"level":"debug","ts":1741098233.174957,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/scripts/75494"}
+{"level":"debug","ts":1741098233.175041,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/scripts/75494"}
+{"level":"debug","ts":1741098233.17507,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098233.175091,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098233.1890402,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/buildings/5545"}
+{"level":"debug","ts":1741098233.189161,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/buildings/5545"}
+{"level":"debug","ts":1741098233.189195,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098233.189213,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098233.2200909,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"debug","ts":1741098233.2201269,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"info","ts":1741098233.220235,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/buildings/5549"}
+{"level":"info","ts":1741098233.22019,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/buildings/5544"}
+{"level":"info","ts":1741098233.220274,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/buildings/5549 <nil>} {Status Code 11 204  <nil>}"}
+{"level":"info","ts":1741098233.220316,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/buildings/5544 <nil>} {Status Code 11 204  <nil>}"}
+{"level":"debug","ts":1741098233.2206101,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/scripts/75494 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x1400013ec60}"}
+{"level":"debug","ts":1741098233.223968,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"info","ts":1741098233.2263758,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12205"}
+{"level":"info","ts":1741098233.2264059,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12205 <nil>} {Status Code 11 204  <nil>}"}
+{"level":"debug","ts":1741098233.229002,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"info","ts":1741098233.2323499,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12211"}
+{"level":"info","ts":1741098233.232494,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12211 <nil>} {Status Code 11 204  <nil>}"}
+{"level":"debug","ts":1741098233.234001,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"info","ts":1741098233.234082,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12212"}
+{"level":"info","ts":1741098233.234263,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12212 <nil>} {Status Code 11 204  <nil>}"}
+{"level":"debug","ts":1741098233.234345,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/computer-extension-attributes/12209"}
+{"level":"debug","ts":1741098233.2344131,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12209"}
+{"level":"debug","ts":1741098233.2344372,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098233.234452,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098233.240733,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/buildings/5540"}
+{"level":"debug","ts":1741098233.240799,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/buildings/5540"}
+{"level":"debug","ts":1741098233.2408252,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098233.2408378,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098233.245363,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"info","ts":1741098233.24834,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12206"}
+{"level":"info","ts":1741098233.248378,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12206 <nil>} {Status Code 11 204  <nil>}"}
+{"level":"debug","ts":1741098233.2510002,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/computer-extension-attributes/12207"}
+{"level":"debug","ts":1741098233.251127,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12207"}
+{"level":"debug","ts":1741098233.251158,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098233.251245,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098233.2570722,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/computer-extension-attributes/12214"}
+{"level":"debug","ts":1741098233.257167,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12214"}
+{"level":"debug","ts":1741098233.257188,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098233.2572072,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098233.275052,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/buildings/5545 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x14000528a20}"}
+{"level":"debug","ts":1741098233.3218272,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"info","ts":1741098233.321936,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/scripts/75494"}
+{"level":"info","ts":1741098233.321973,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/scripts/75494 <nil>} {Status Code 11 204  <nil>}"}
+{"level":"debug","ts":1741098233.3222039,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/scripts/75488"}
+{"level":"debug","ts":1741098233.322289,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/scripts/75488"}
+{"level":"debug","ts":1741098233.3223119,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098233.322328,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098233.329771,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/buildings/5542"}
+{"level":"debug","ts":1741098233.3298712,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/buildings/5542"}
+{"level":"debug","ts":1741098233.329904,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098233.329925,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098233.3316321,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/computer-extension-attributes/12209 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x1400013ecf0}"}
+{"level":"debug","ts":1741098233.331638,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/buildings/5540 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x1400013eb40}"}
+{"level":"debug","ts":1741098233.3520908,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/computer-extension-attributes/12207 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x1400013ed80}"}
+{"level":"debug","ts":1741098233.3520849,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/computer-extension-attributes/12214 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x1400013ee10}"}
+{"level":"debug","ts":1741098233.3679922,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/scripts/75488 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x1400013ef30}"}
+{"level":"debug","ts":1741098233.376044,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"info","ts":1741098233.376086,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/buildings/5545"}
+{"level":"info","ts":1741098233.3761148,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/buildings/5545 <nil>} {Status Code 11 204  <nil>}"}
+{"level":"debug","ts":1741098233.38354,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/computer-extension-attributes/12210"}
+{"level":"debug","ts":1741098233.383657,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12210"}
+{"level":"debug","ts":1741098233.3836842,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098233.3837209,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098233.416269,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/buildings/5542 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x1400071cd80}"}
+{"level":"debug","ts":1741098233.4327629,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"debug","ts":1741098233.432794,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"info","ts":1741098233.432958,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12209"}
+{"level":"info","ts":1741098233.4330082,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12209 <nil>} {Status Code 11 204  <nil>}"}
+{"level":"info","ts":1741098233.432908,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/buildings/5540"}
+{"level":"info","ts":1741098233.433106,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/buildings/5540 <nil>} {Status Code 11 204  <nil>}"}
+{"level":"debug","ts":1741098233.444101,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/computer-extension-attributes/12213"}
+{"level":"debug","ts":1741098233.446027,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12213"}
+{"level":"debug","ts":1741098233.446078,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098233.446105,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098233.452645,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"info","ts":1741098233.452716,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12214"}
+{"level":"info","ts":1741098233.452745,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12214 <nil>} {Status Code 11 204  <nil>}"}
+{"level":"debug","ts":1741098233.452667,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"info","ts":1741098233.4528131,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12207"}
+{"level":"info","ts":1741098233.4528499,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12207 <nil>} {Status Code 11 204  <nil>}"}
+{"level":"debug","ts":1741098233.466413,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/buildings/5546"}
+{"level":"debug","ts":1741098233.466496,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/buildings/5546"}
+{"level":"debug","ts":1741098233.466523,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098233.4665458,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098233.46643,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/buildings/5541"}
+{"level":"debug","ts":1741098233.466689,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/buildings/5541"}
+{"level":"debug","ts":1741098233.466727,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098233.466784,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098233.4682398,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"info","ts":1741098233.468281,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/scripts/75488"}
+{"level":"info","ts":1741098233.468307,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/scripts/75488 <nil>} {Status Code 11 204  <nil>}"}
+{"level":"debug","ts":1741098233.4686441,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/scripts/75489"}
+{"level":"debug","ts":1741098233.4687018,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/scripts/75489"}
+{"level":"debug","ts":1741098233.4687219,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098233.4687371,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098233.473309,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/computer-extension-attributes/12210 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x1400072f050}"}
+{"level":"debug","ts":1741098233.5128021,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/scripts/75489 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x1400071c870}"}
+{"level":"debug","ts":1741098233.516937,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"info","ts":1741098233.5169961,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/buildings/5542"}
+{"level":"info","ts":1741098233.51703,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/buildings/5542 <nil>} {Status Code 11 204  <nil>}"}
+{"level":"debug","ts":1741098233.5281742,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/buildings/5543"}
+{"level":"debug","ts":1741098233.528258,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/buildings/5543"}
+{"level":"debug","ts":1741098233.528291,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098233.528308,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098233.532786,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/computer-extension-attributes/12213 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x14000528c60}"}
+{"level":"debug","ts":1741098233.54378,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/buildings/5541 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x1400072e090}"}
+{"level":"debug","ts":1741098233.5453608,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/buildings/5546 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x140006f8120}"}
+{"level":"debug","ts":1741098233.5749261,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"info","ts":1741098233.575021,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12210"}
+{"level":"info","ts":1741098233.575041,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12210 <nil>} {Status Code 11 204  <nil>}"}
+{"level":"debug","ts":1741098233.581803,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/computer-extension-attributes/12208"}
+{"level":"debug","ts":1741098233.58189,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12208"}
+{"level":"debug","ts":1741098233.581911,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098233.581922,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098233.608625,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/buildings/5543 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x140006f8240}"}
+{"level":"debug","ts":1741098233.613463,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"info","ts":1741098233.61352,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/scripts/75489"}
+{"level":"info","ts":1741098233.613554,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/scripts/75489 <nil>} {Status Code 11 204  <nil>}"}
+{"level":"debug","ts":1741098233.613825,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/scripts/75490"}
+{"level":"debug","ts":1741098233.613903,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/scripts/75490"}
+{"level":"debug","ts":1741098233.61393,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098233.613962,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098233.62061,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/buildings/5548"}
+{"level":"debug","ts":1741098233.620688,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/buildings/5548"}
+{"level":"debug","ts":1741098233.6207092,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098233.620726,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098233.6339672,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"info","ts":1741098233.634031,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12213"}
+{"level":"info","ts":1741098233.6340811,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12213 <nil>} {Status Code 11 204  <nil>}"}
+{"level":"debug","ts":1741098233.644246,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"info","ts":1741098233.6443121,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/buildings/5541"}
+{"level":"info","ts":1741098233.6443431,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/buildings/5541 <nil>} {Status Code 11 204  <nil>}"}
+{"level":"debug","ts":1741098233.6455302,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"info","ts":1741098233.645568,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/buildings/5546"}
+{"level":"info","ts":1741098233.64559,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/buildings/5546 <nil>} {Status Code 11 204  <nil>}"}
+{"level":"debug","ts":1741098233.655424,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/buildings/5547"}
+{"level":"debug","ts":1741098233.655509,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/scripts/75490 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x140006f8f30}"}
+{"level":"debug","ts":1741098233.655519,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/buildings/5547"}
+{"level":"debug","ts":1741098233.65556,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098233.6555798,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098233.667427,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/computer-extension-attributes/12208 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x140006f8fc0}"}
+{"level":"debug","ts":1741098233.69892,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/buildings/5548 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x14000529560}"}
+{"level":"debug","ts":1741098233.709172,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"info","ts":1741098233.709269,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/buildings/5543"}
+{"level":"info","ts":1741098233.709356,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/buildings/5543 <nil>} {Status Code 11 204  <nil>}"}
+{"level":"debug","ts":1741098233.725596,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/buildings/5547 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x14000529680}"}
+{"level":"debug","ts":1741098233.756615,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"info","ts":1741098233.7566981,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/scripts/75490"}
+{"level":"info","ts":1741098233.7567208,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/scripts/75490 <nil>} {Status Code 11 204  <nil>}"}
+{"level":"debug","ts":1741098233.756917,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/scripts/75487"}
+{"level":"debug","ts":1741098233.756974,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/scripts/75487"}
+{"level":"debug","ts":1741098233.756991,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098233.7570019,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098233.768221,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"info","ts":1741098233.7683089,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12208"}
+{"level":"info","ts":1741098233.7683342,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/computer-extension-attributes/12208 <nil>} {Status Code 11 204  <nil>}"}
+{"level":"debug","ts":1741098233.800107,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"info","ts":1741098233.800179,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/buildings/5548"}
+{"level":"info","ts":1741098233.800201,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/buildings/5548 <nil>} {Status Code 11 204  <nil>}"}
+{"level":"debug","ts":1741098233.803545,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/scripts/75487 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x140005297a0}"}
+{"level":"debug","ts":1741098233.8267388,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"info","ts":1741098233.826815,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/buildings/5547"}
+{"level":"info","ts":1741098233.826834,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/buildings/5547 <nil>} {Status Code 11 204  <nil>}"}
+{"level":"debug","ts":1741098233.905683,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"info","ts":1741098233.905822,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/scripts/75487"}
+{"level":"info","ts":1741098233.905858,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/scripts/75487 <nil>} {Status Code 11 204  <nil>}"}
+{"level":"debug","ts":1741098233.906121,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/scripts/75486"}
+{"level":"debug","ts":1741098233.906191,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/scripts/75486"}
+{"level":"debug","ts":1741098233.906212,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098233.906228,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098233.996465,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/scripts/75486 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x1400072e630}"}
+{"level":"debug","ts":1741098234.0978281,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"info","ts":1741098234.097951,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/scripts/75486"}
+{"level":"info","ts":1741098234.097993,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/scripts/75486 <nil>} {Status Code 11 204  <nil>}"}
+{"level":"debug","ts":1741098234.0982661,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/scripts/75492"}
+{"level":"debug","ts":1741098234.098347,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/scripts/75492"}
+{"level":"debug","ts":1741098234.09837,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098234.0983932,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098234.14452,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/scripts/75492 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x14000529950}"}
+{"level":"debug","ts":1741098234.24894,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"info","ts":1741098234.248969,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/scripts/75492"}
+{"level":"info","ts":1741098234.248981,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/scripts/75492 <nil>} {Status Code 11 204  <nil>}"}
+{"level":"debug","ts":1741098234.24927,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/scripts/75491"}
+{"level":"debug","ts":1741098234.249311,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/scripts/75491"}
+{"level":"debug","ts":1741098234.2493389,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098234.2493498,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098234.2937431,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/scripts/75491 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x14000538120}"}
+{"level":"debug","ts":1741098234.39495,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"info","ts":1741098234.395095,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/scripts/75491"}
+{"level":"info","ts":1741098234.395173,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/scripts/75491 <nil>} {Status Code 11 204  <nil>}"}
+{"level":"debug","ts":1741098234.395734,"caller":"httpclient/request.go:213","msg":"Executing request without retries","method":"DELETE","endpoint":"/api/v1/scripts/75495"}
+{"level":"debug","ts":1741098234.395873,"caller":"jamfprointegration/preprequest.go:26","msg":"LOG-CONTENT-TYPE","METHOD":"DELETE","URL":"https://lbgsandbox.jamfcloud.com/api/v1/scripts/75495"}
+{"level":"debug","ts":1741098234.395915,"caller":"jamfprointegration/preprequest.go:34","msg":"request headers added, refreshing token"}
+{"level":"debug","ts":1741098234.395951,"caller":"jamfprointegration/preprequest.go:42","msg":"token refreshed, setting header"}
+{"level":"debug","ts":1741098234.440267,"caller":"httpclient/request.go:288","msg":"Request sent successfully{method 15 0 DELETE <nil>} {endpoint 15 0 /api/v1/scripts/75495 <nil>} {status_code 11 204  <nil>} {raw_response 23 0  0x14000538240}"}
+{"level":"debug","ts":1741098234.541595,"caller":"httpclient/request.go:220","msg":"Status Code: 204"}
+{"level":"info","ts":1741098234.541802,"caller":"httpclient/request.go:226","msg":"DELETE request successful at https://lbgsandbox.jamfcloud.com/api/v1/scripts/75495"}
+{"level":"info","ts":1741098234.541894,"caller":"response/success.go:71","msg":"Successfully processed DELETE request{URL 15 0 https://lbgsandbox.jamfcloud.com/api/v1/scripts/75495 <nil>} {Status Code 11 204  <nil>}"}
